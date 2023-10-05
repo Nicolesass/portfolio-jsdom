@@ -120,3 +120,12 @@ a:hover {
 .hamburger-icon span:first-child {
   transform: none;
 }
+@media screen and (max-width: 1200px) {
+  #desktop-nav {
+      display: none;
+  }
+  #hamburger-nav {
+      display: flex;
+  }
+  
+}
