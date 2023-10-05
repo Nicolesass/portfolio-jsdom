@@ -1,4 +1,5 @@
 import './style.css'
+import { getMenu, getCurrentPage } from './Router';
 
 
 document.querySelector('#app').innerHTML = /*html */`
@@ -21,13 +22,11 @@ document.querySelector('#app').innerHTML = /*html */`
                 <span></span>
             </div>
             <div class="menu-links">
-                <li><a href="#about" >About</a></li>
-                <li><a href="#projects"  >Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+            ${getMenu()}
             </div>
         </div>
     </nav>
-
+${getCurrentPage()}
 
 `;
 const hamburgerIconElem = document.querySelector(".hamburger-icon")
